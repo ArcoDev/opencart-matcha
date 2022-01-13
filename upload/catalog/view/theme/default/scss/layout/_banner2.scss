@@ -1,0 +1,53 @@
+.banner2 {
+    @include grid(1);
+    place-items: center;
+    width: 92%;
+    height: 225px;
+    margin: 2.3rem auto;
+    background-image: url('../img/banner2.png');
+    padding: 0;
+
+    @include mobile {
+        width: 100%;
+        left: 0;
+        border-radius: 0;
+        background-image: url('../img/mov-banner2.png');
+    }
+
+    h3,
+    a {
+        position: relative;
+    }
+
+    h3 {
+        margin: 3rem 0 0 0;
+    }
+
+    a {
+        margin: -2.5rem 0 0 0;
+        transition: .3s ease-out;
+        &:hover {
+            color: $secondary!important;
+            background: $tertiary;
+        }
+
+        @include mobile {
+            margin: -4rem 0 0 0;
+        }
+    }
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 92%;
+        height: 225px;
+        background: #C4C4C4;
+        mix-blend-mode: multiply;
+
+        @include mobile {
+            width: 100%;
+        }
+
+    }
+}

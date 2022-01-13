@@ -1,0 +1,19 @@
+<?php
+$_['heading_title'] 	=  'Clientes por Aprobar';
+$_['text_success'] 	=  '¡Has modificado los clientes por aprobar exitosamente!';
+$_['text_list'] 	=  'Lista de Clientes por Aprobar';
+$_['text_default'] 	=  'Predeterminado';
+$_['text_customer'] 	=  'Cliente';
+$_['text_affiliate'] 	=  'Afiliado';
+$_['column_name'] 	=  'Nombre';
+$_['column_email'] 	=  'Correo Electrónico';
+$_['column_customer_group'] 	=  'Grupo de Clientes';
+$_['column_type'] 	=  'Tipo';
+$_['column_date_added'] 	=  'Fecha Agregado';
+$_['column_action'] 	=  'Acción';
+$_['entry_name'] 	=  'Nombre del Cliente';
+$_['entry_email'] 	=  'Correo Electrónico';
+$_['entry_customer_group'] 	=  'Grupo de Clientes';
+$_['entry_type'] 	=  'Tipo';
+$_['entry_date_added'] 	=  'Fecha Agregado';
+$_['error_permission'] 	=  'Advertencia: ¡No tiene permiso para modificar las aprobaciones de clientes!';

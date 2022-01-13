@@ -1,0 +1,24 @@
+<?php
+$_['heading_title'] 		=  'Fabricantes';
+$_['text_success'] 			=  '¡Usted ha modificado los fabricantes exitosamente!';
+$_['text_list'] 			=  'Lista de Fabricantes';
+$_['text_add'] 				=  'Agregar Fabricante';
+$_['text_edit'] 			=  'Editar Fabricante';
+$_['text_default'] 			=  'Predeterminado';
+$_['text_percent'] 			=  'Porcentaje';
+$_['text_amount'] 			=  'Valor Fijo';
+$_['text_keyword'] 			=  'No utilice espacios, reemplace los espacios con - y asegúrese de que la URL de SEO sea globalmente única.';
+$_['column_name'] 			=  'Nombre';
+$_['column_sort_order'] 	=  'Posición';
+$_['column_action'] 		=  'Acción';
+$_['entry_name'] 			=  'Nombre del Fabricante';
+$_['entry_store'] 			=  'Tiendas';
+$_['entry_keyword'] 		=  'Palabras Clave';
+$_['entry_image'] 			=  'Imagen';
+$_['entry_sort_order'] 		=  'Orden de Clasificación';
+$_['entry_type'] 			=  'Tipo';
+$_['error_permission'] 		=  'Advertencia: ¡No tiene permiso para modificar los fabricantes!';
+$_['error_name'] 			=  '¡El nombre del fabricante debe tener entre 1 y 64 caracteres!';
+$_['error_keyword'] 		=  'La URL SEO ya está en uso!';
+$_['error_unique'] 			=  'La URL SEO debe ser única!';
+$_['error_product'] 		=  'Advertencia: ¡Este fabricante no se puede eliminar ya que está asignado actualmente a los productos de %s!';

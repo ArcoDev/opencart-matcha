@@ -1,0 +1,23 @@
+<?php
+$_['heading_title'] 	=  'Descargas';
+$_['text_success'] 		=  '¡Has modificado las descargas exitosamente!';
+$_['text_list'] 		=  'Lista de Descargas';
+$_['text_add'] 			=  'Agregar Descarga';
+$_['text_edit'] 		=  'Editar Descarga';
+$_['text_upload'] 		=  '¡Tu archivo se ha cargado correctamente!';
+$_['column_name'] 		=  'Nombre';
+$_['column_date_added'] =  'Fecha Inicial';
+$_['column_action'] 	=  'Acción';
+$_['entry_name'] 		=  'Nombre de Descarga';
+$_['entry_filename'] 	=  'Nombre del Archivo';
+$_['entry_mask'] 		=  'Máscara';
+$_['help_filename'] 	=  'Puede cargarlo a través del botón de carga o utilizar FTP para subir al directorio de descarga e ingresar los detalles a continuación.';
+$_['help_mask'] 		=  'Se recomienda que el nombre de archivo y la máscara sean diferentes para evitar que las personas intenten enlazar directamente a sus descargas.';
+$_['error_permission'] 	=  'Advertencia: ¡No tienes permiso para modificar las descargas!';
+$_['error_name'] 		=  '¡El nombre de la descarga debe tener entre 3 y 64 caracteres!';
+$_['error_upload'] 		=  '¡Se requiere subir un archivo!';
+$_['error_filename'] 	=  '¡El nombre de archivo debe tener entre 3 y 128 caracteres!';
+$_['error_exists'] 		=  '¡El archivo no existe!';
+$_['error_mask'] 		=  '¡La máscara debe tener entre 3 y 128 caracteres!';
+$_['error_filetype'] 	=  '¡Tipo de archivo invalido!';
+$_['error_product'] 	=  'Advertencia: Esta descarga no se puede eliminar ya que está asignada actualmente a %s products!';

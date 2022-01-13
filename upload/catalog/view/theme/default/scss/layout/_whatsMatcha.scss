@@ -1,0 +1,85 @@
+.whats-matcha {
+    width: 100%;
+    height: auto;
+    @include backBanner;
+    background-position: bottom center;
+    background-image: url('../img/whats-matcha-desk.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5.5rem 0 0 0;
+
+    @include mobile {
+        background-size: contain;
+        background-position: center;
+        background-image: url('../img/whats-matcha-mov.svg');
+        overflow-x: hidden;
+    }
+
+    h2 {
+        @include titleH2;
+        color: $tertiary;
+    }
+
+    .box-matcha {
+        width: 575px;
+        display: flex;
+        justify-content: flex-end;
+
+        @include mobile {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .text-matcha {
+            width: 244px;
+
+            p {
+                font: normal normal 400 .875rem/21px $firaSans;
+                color: $tertiary;
+
+                &:nth-child(1) {
+                    margin-bottom: 3rem;
+
+                    @include mobile {
+                        margin-bottom: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .img-matcha {
+        position: relative;
+        top: -70px;
+        left: -70px;
+        z-index: 1;
+
+        @include mobile {
+            left: 0;
+            top: -30px;
+            z-index: unset;
+        }
+    }
+
+    .btn-matcha {
+        width: 100px;
+        height: 100px;
+        @include backBanner;
+        background-image: url('../img/fondo-btn.svg');
+        display: grid;
+        place-items: center;
+        color: $tertiary_hover;
+        font: normal italic 500 .875rem/17px $firaSans;
+        position: relative;
+        top: -200px;
+        left: -230px;
+
+        @include mobile {
+            top: -115px;
+            left: 0;
+            z-index: 1;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.banner {
+    @include grid(1);
+    place-items: center;
+    height: 308.59px;
+    @include backBanner;
+    background-image: url('../img/banner1.png');
+    color: #fff;
+    text-align: center;
+    padding: 2.988rem 0;
+
+    @include mobile {
+        width: 328px;
+        height: 397px;
+        margin: 0 auto;
+        border-radius: 8px;
+        background-image: url('../img/mov-banner1.png');
+
+    }
+
+    p {
+        font: normal normal 400 0.75rem/12px InterstateLight;
+        letter-spacing: 0.4em;
+
+        &::before {
+            content: '';
+            position: absolute;
+            margin: 2rem 0 0 6.5rem;
+            width: 3%;
+            height: 2px;
+            background: $secondary;
+
+            @include mobile {
+                width: 14%;
+
+            }
+        }
+    }
+
+    h3 {
+        width: 735px;
+        font: normal normal bold 2.5rem/46px TimesBold;
+        margin: 2.25rem 0;
+
+        @include mobile {
+            width: 302px;
+            font: normal normal 700 1.5rem/27.6px TimesBold;
+            margin: 0
+        }
+    }
+
+    a {
+        @include btnBuy(248px, 40px, $secondary, $primary);
+        font-weight: bold;
+        transition: .3s ease-out;
+
+        &:hover {
+            color: $secondary !important;
+            background: $tertiary;
+        }
+
+        @include mobile {
+            @include btnBuy(200px, 40px, $secondary, $primary);
+
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.shop {
+    @include grid(1);
+    place-items: center;
+    padding: 3rem 0 3.5rem 0;
+    @include mobile {
+        padding: 2rem 0;
+    }
+    h2 {
+        @include titleH2;
+    }
+}
+
+.container-wines {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+        width: 328px;
+        flex-direction: column;
+    }
+    @include tablet {
+        width: 90%;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    @include monitor {
+        width: 60%;
+    }
+
+    .box-wines {
+        width: 224.95px;
+        height: 224.95px;
+        @include grid(1);
+        place-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: .2s ease-out;
+
+        @include mobile {
+            width: 328px;
+            height: 70px;
+            margin-bottom: .5rem;
+        }
+
+        @include tablet {
+            width: 49%;
+        }
+
+        &.tintos {
+            background-image: url('../img/tintos.png');
+        }
+
+        &.blancos {
+            background-image: url('../img/blancos.png');
+        }
+
+        &.espuma {
+            background-image: url('../img/espumantes.png');
+        }
+
+        &.especiales {
+            background-image: url('../img/especiales.png');
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 224.95px;
+            height: 224.95px;
+            background: #C4C4C4;
+            mix-blend-mode: multiply;
+
+            @include mobile {
+                width: 328px;
+                height: 70px;
+            }
+            @include tablet {
+                width: 44%;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.03);
+        }
+
+        p {
+            position: relative;
+            font-size: 2.25rem;
+            font-weight: 700;
+            line-height: 14px;
+            color: $secondary;
+            margin: 0;
+
+            @include mobile {
+                font-size: 1.75rem;
+            }
+        }
+    }
+}

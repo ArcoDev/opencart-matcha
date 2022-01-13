@@ -1,0 +1,284 @@
+//Global
+*,
+html {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $firaSans !important;
+    font-size: 16px;
+    overflow-x: hidden !important;
+
+    &::-webkit-scrollbar {
+        background: $gradient;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $tertiary_hover;
+        border: 1px solid $tertiary_hover;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+
+        &:hover {
+            background-color: darken($tertiary_hover, 10);
+        }
+    }
+}
+
+//Custom carousel
+.box-text {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    padding: 0 0 0 2.3rem;
+    width: 35%;
+
+    @include mobile {
+        width: 90%;
+        padding: 0 0 0 1rem;
+        top: 60%;
+    }
+
+    h1 {
+        color: $secondary !important;
+        font-weight: 400;
+
+        @include monitor {
+            width: 70%;
+        }
+    }
+
+    .btn-buy {
+        width: 248px;
+        height: 40px;
+        background: $secondary;
+        color: $primary;
+        font-family: $firaSans;
+        font-weight: 700;
+        line-height: 16.7px;
+        transition: .3s ease-out;
+        margin: 1rem 0;
+
+        &:hover {
+            background: $tertiary;
+            color: $secondary;
+            cursor: pointer;
+            transform: scale(1.03);
+        }
+    }
+}
+
+
+
+.carousel-item {
+    @include mobile {
+        .w-100 {
+            width: unset !important;
+        }
+    }
+}
+
+
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mobile {
+        height: 500px;
+    }
+}
+
+.slider1 {
+    background-image: url('../img/slider1.svg');
+
+    @include mobile {
+        background-image: url('../img/slider1-mov.svg');
+    }
+}
+
+.slider2 {
+    background-image: url('../img/slider2.svg');
+
+    @include mobile {
+        background-image: url('../img/slider2-mov.svg');
+    }
+}
+
+
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+    cursor: default;
+}
+
+.carousel-control-prev-icon {
+    @include controls;
+    left: 22%;
+    background-image: url('../img/arrowLeft.svg') !important;
+
+    @include mobile {
+        left: 40%;
+    }
+
+    @include tablet {
+        left: 35%;
+    }
+
+    @include monitor {
+        left: 14%;
+        bottom: 1.3rem;
+    }
+}
+
+.carousel-control-next-icon {
+    @include controls;
+    left: -63rem;
+    background-image: url('../img/arrowRight.svg') !important;
+
+    @include mobile {
+        left: -12rem;
+    }
+
+    @include tablet {
+        left: -33rem;
+    }
+
+    @include monitor {
+        left: -94rem;
+        bottom: 1.3rem;
+    }
+}
+
+//End Custom carousel
+
+
+
+//Custom Footer
+.info-mov {
+    display: none;
+}
+
+@include mobile {
+    .info-desc {
+        display: none;
+    }
+
+    .info-mov {
+        display: block;
+
+        button {
+            width: 100%;
+            text-align: left;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: $secondary;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &:hover {
+                color: $secondary;
+            }
+
+            &:focus:not(:focus-visible) {
+                outline: none;
+            }
+        }
+    }
+}
+
+//End Custom Footer
+
+
+
+// Custom pages height
+// .height-full {
+//     height: auto !important;
+// }
+
+// End Custom pages height
+
+
+// breadcrumb global
+.breadcrumb {
+    border: 1px solid $tertiary_hover;
+    padding: .5rem !important;
+    border-radius: 9px;
+    background-color: $tertiary_hover;
+
+    li a {
+        color: $tertiary;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+
+//End breadcrumb global
+
+// Estilos Button global
+.btn-primary {
+    padding: 0.6rem 3rem !important;
+    border: 1px solid transparent !important;
+    border-radius: 20px !important;
+    background-color: $tertiary_hover !important;
+    color: $tertiary !important;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5), 0 2px 2px 0 rgba(0, 0, 0, 0.19) !important;
+
+    &:hover {
+        background-color: $tertiary !important;
+        color: $tertiary_hover !important;
+    }
+}
+
+// End button global
+
+// Estilos fomulario search
+.style-search {
+    color: $tertiary !important;
+
+    a {
+        color: $tertiary;
+        font-weight: bold;
+
+        &:hover {
+            color: lighten($tertiary, 10);
+        }
+    }
+
+    .btn-tooltip {
+        border: 1px solid #ccc;
+        background-color: $tertiary_hover;
+        color: $tertiary;
+    }
+
+    .input-group-addon {
+        border: 1px solid transparent;
+        background-color: $tertiary_hover;
+        padding: .4rem .5rem;
+        border-radius: 5px;
+    }
+}
+
+.list-unstyled {
+    li a {
+        color: lighten($tertiary, 10);
+        &:hover {
+            color: $tertiary;
+        }
+    }
+}

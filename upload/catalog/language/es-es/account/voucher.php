@@ -1,0 +1,23 @@
+<?php
+$_['heading_title'] 	=  'Comprar una Tarjeta de Regalo';
+$_['text_account'] 	=  'Cuenta';
+$_['text_voucher'] 	=  'Tarjeta de Regalo';
+$_['text_description'] 	=  'Este certificado de regalo se enviará por correo electrónico al destinatario después de que su pedido haya sido pagado.';
+$_['text_agree'] 	=  'Entiendo que los certificados de regalo no son reembolsables.';
+$_['text_message'] 	=  '<p>¡Gracias por comprar un certificado de regalo! Una vez que haya completado su pedido, su destinatario del certificado de regalo recibirá un correo electrónico con detalles sobre cómo canjear su certificado de regalo.</p>';
+$_['text_for'] 	=  'Tarjeta de regalo %s para %s';
+$_['entry_to_name'] 	=  'Nombre del Destinatario';
+$_['entry_to_email'] 	=  'E-mail del Destinatario';
+$_['entry_from_name'] 	=  'Nombre del Remitente';
+$_['entry_from_email'] 	=  'E-mail del Remitente';
+$_['entry_theme'] 	=  'Plantilla de la tarjeta de regalo';
+$_['entry_message'] 	=  'Mensaje';
+$_['entry_amount'] 	=  'Cantidad';
+$_['help_message'] 	=  'Opcional';
+$_['help_amount'] 	=  'El valor debe estar entre %s y %s';
+$_['error_to_name'] 	=  '¡El nombre del destinatario debe tener entre 1 y 64 caracteres!';
+$_['error_from_name'] 	=  'Su nombre debe tener entre 1 y 64 caracteres.';
+$_['error_email'] 	=  '¡La dirección de correo electrónico no parece válida!';
+$_['error_theme'] 	=  '¡Debes seleccionar una plantilla!';
+$_['error_amount'] 	=  '¡La cantidad debe estar entre %s y %s!';
+$_['error_agree'] 	=  'Advertencia: ¡Debe aceptar que las tarjetas de regalo no son reembolsables!';

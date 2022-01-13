@@ -1,0 +1,335 @@
+// Navegation mora y matcha
+.nav-mora {
+    width: 100%;
+    height: 70px;
+    background: $secondary;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    z-index: 5;
+    top: 3%;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+
+    @include mobile {
+        padding: 2.5rem 1rem;
+    }
+
+    @include tablet {
+        padding: 2.5rem 1rem;
+    }
+
+    .nav-logo {
+        width: 178px;
+        height: 15px;
+        background-image: url('../img/logoMora.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-top: 1rem;
+
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
+
+        @include monitor {
+            margin-top: .5rem;
+        }
+
+
+    }
+
+    @include mobile {
+        .icons-mov {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+    }
+
+    @include tablet {
+        .icons-mov {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+    }
+
+    .icon-logo {
+        width: 46px;
+        height: 46px;
+        background-image: url('../img/icon-logo.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: none;
+
+        @include mobile {
+            display: block;
+            margin-top: 1rem;
+        }
+
+        @include tablet {
+            display: block;
+            margin-top: 1rem;
+        }
+    }
+
+    // Menu hamburguesa
+    .hamburguer {
+        @include sizeIcons;
+        background-image: url('../img/hamburger.svg');
+        display: none;
+
+        @include mobile {
+            display: block;
+            margin-top: 1rem;
+            margin-left: -2.5rem;
+        }
+
+        @include tablet {
+            display: block;
+            margin-top: 1.3rem;
+        }
+    }
+
+
+    .links {
+        display: flex;
+        gap: 1.3rem;
+        margin: 1rem 0 0 0;
+
+        @include monitor {
+            margin: 0.5rem 0 0 0;
+        }
+
+
+        @include mobile {
+            flex-direction: column;
+            width: 45vh;
+            height: 100vh;
+            background: $secondary;
+            position: absolute;
+            top: 80px;
+            left: -100%;
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+            padding: 1rem;
+            transition: .5s ease-out;
+
+            &.activo {
+                left: 0;
+            }
+        }
+
+        @include tablet {
+            display: none;
+            flex-direction: column;
+            width: 45vh;
+            height: 100vh;
+            background: $secondary;
+            position: absolute;
+            top: 80px;
+            left: -100%;
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+            padding: 1rem;
+        }
+
+
+        li a {
+            font: normal normal 400 .813rem/15px $firaSans;
+            color: $gray;
+
+
+            @include mobile {
+                font: normal normal 400 1.25rem/15px $firaSans;
+            }
+
+            @include tablet {
+                font: normal normal 400 1.5rem/15px $firaSans;
+
+            }
+
+            &:hover {
+                color: $tertiary_hover;
+            }
+        }
+    }
+
+}
+
+.icon-search {
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    margin-top: .6rem;
+
+    @include mobile {
+        z-index: 1;
+        width: 20px;
+        height: 20px;
+        left: 15%;
+        bottom: 5%;
+        display: none;
+    }
+
+    @include tablet {
+        z-index: 1;
+        width: 20px;
+        height: 20px;
+        left: 15%;
+        bottom: 5%;
+        display: none;
+    }
+}
+
+.input-desc {
+    width: 248px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: .3rem 1.3rem;
+
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        display: none;
+    }
+}
+
+
+.input-hidden {
+    display: none;
+
+    @include mobile {
+        position: absolute;
+        border: 1px solid #F0F0F0;
+        background: #F0F0F0;
+        border-radius: 4px !important;
+        font-size: 1rem;
+        top: 40px;
+        left: -133px;
+        padding: 0 7.3rem 0 1.5rem;
+    }
+}
+
+
+.button-search {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    margin-top: 8px;
+    margin-left: -250px;
+
+    @include mobile {
+        margin-top: 40px;
+        margin-left: -133px;
+        display: none;
+    }
+
+    &:focus {
+        color: #828282;
+    }
+
+    &.active-close {
+        display: flex;
+    }
+}
+
+.close-search {
+    display: none;
+
+    @include mobile {
+        position: absolute;
+        margin-top: 42px;
+        margin-left: 165px !important;
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        background: #F0F0F0;
+        color: $primary;
+        z-index: 10;
+
+        &.active-close {
+            display: flex;
+        }
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0 0 2rem;
+
+    .search {
+        @include sizeIcons;
+        background-image: url('../img/search.svg');
+        display: none;
+
+        @include mobile {
+            display: block;
+        }
+
+        @include tablet {
+            display: block;
+        }
+    }
+
+    .user {
+        @include sizeIcons;
+        background-image: url('../img/user.svg');
+
+        &::after {
+            display: none !important;
+        }
+    }
+
+    .cart {
+        @include sizeIcons;
+        background-image: url('../img/cart.svg');
+    }
+}
+
+.dropdown-menu {
+    border: 1px solid $tertiary_hover !important;
+    margin-top: .5rem!important;
+    background-color: $tertiary_hover !important;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
+    &::before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        right: 10px;
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid $tertiary_hover;   
+    }
+    
+    &.show {
+        background-color: $tertiary_hover;
+        transform: translate(-95px, 57px)!important;
+    }
+
+    li a {
+        color: $tertiary;
+        margin: 1rem;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+//Colors
+$primary:       #000000;
+$secondary:     #ffffff;
+$tertiary:      #2E4121;
+$tertiary_hover:#C7E0BB;
+$gray:          #2E4121;
+$gradient:        linear-gradient(270.13deg, #2E4121 12.43%, #8EA582 90.18%);
+
+//Font
+$firaSans: 'Fira Sans', sans-serif;
+
+//Media Query
+$mobile: 767px;
+$tabletH: 768px;
+$tabletV: 1279px;
+$monitor: 1919px;
+
+//@media screen and (min-width:768px) and (max-width:1919px)

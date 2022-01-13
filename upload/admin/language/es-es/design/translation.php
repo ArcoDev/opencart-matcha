@@ -1,0 +1,23 @@
+<?php
+$_['heading_title'] 	=  'Editor de Idiomas';
+$_['text_success'] 	=  '¡Has modificado el editor de idiomas exitosamente!';
+$_['text_list'] 	=  'Lista de Traducciones';
+$_['text_edit'] 	=  'Editar Traducción';
+$_['text_add'] 	=  'Agregar Traducción';
+$_['text_default'] 	=  'Predeterminado';
+$_['text_store'] 	=  'Almacenar';
+$_['text_language'] 	=  'Idioma';
+$_['column_store'] 	=  'Tienda';
+$_['column_language'] 	=  'Idioma';
+$_['column_route'] 	=  'Ruta';
+$_['column_key'] 	=  'Llave';
+$_['column_value'] 	=  'Valor';
+$_['column_action'] 	=  'Acción';
+$_['entry_store'] 	=  'Tienda';
+$_['entry_language'] 	=  'Idioma';
+$_['entry_route'] 	=  'Ruta';
+$_['entry_key'] 	=  'Llave';
+$_['entry_default'] 	=  'Predeterminado';
+$_['entry_value'] 	=  'Valor';
+$_['error_permission'] 	=  'Advertencia: ¡No tiene permiso para modificar el editor de idiomas!';
+$_['error_key'] 	=  '¡La clave debe estar entre 3 y 64 caracteres!';

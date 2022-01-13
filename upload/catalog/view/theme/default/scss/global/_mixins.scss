@@ -1,0 +1,73 @@
+//Columnas
+@mixin grid($columns) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+}
+
+//Controles del carousel
+@mixin controls {
+    padding: 1rem;
+    position: absolute;
+    bottom: 4%;
+    width: 4rem !important;
+    cursor: pointer;
+
+    @include mobile {
+        bottom: 1%;
+    }
+}
+
+//Encabezado de cada seccion 
+@mixin titleH2 {
+    font: normal normal 600 1.78rem/33px $firaSans;
+    margin-bottom: 2rem;
+
+    @include mobile {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+}
+
+//Fondo banner 
+@mixin backBanner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+//Boton Comprar
+@mixin btnBuy($width, $height, $background, $color) {
+    width: $width;
+    height: $height;
+    background: $background;
+    color: $color !important;
+    border-radius: 4px;
+    padding: .5rem 0 0 0;
+
+}
+
+// Size Icons
+@mixin sizeIcons {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+//Media queries
+@mixin mobile {
+    @media screen and (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: $tabletH) and (max-width: $tabletV) {
+        @content;
+    }
+}
+
+@mixin monitor {
+    @media screen and (min-width: $monitor) {
+        @content;
+    }
+}

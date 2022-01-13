@@ -1,0 +1,102 @@
+.sold {
+    @include grid(1);
+    place-items: center;
+    padding: 5rem 0 1rem 0;
+
+    @include mobile {
+        padding: 3rem 0 0 0;
+    }
+
+    h2 {
+        @include titleH2;
+    }
+}
+
+.container-sold {
+    width: 95%;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+
+    @include mobile {
+        flex-wrap: wrap;
+    }
+
+    .box-sold {
+        width: 25%;
+        padding: 1rem;
+        border-radius: 8px;
+        transition: all .4s ease-out;
+
+        @include mobile {
+            width: 50%;
+        }
+        @include tablet {
+            width: 50%;
+            margin: 2rem 0;
+        }
+
+        img {
+            transition: all .5s ease-out;
+
+            @include mobile {
+                width: 100%;
+            }
+        }
+
+        h4 {
+            font: normal normal normal 0.75rem/12px InterstateBold;
+            margin: .5rem 0;
+        }
+
+        h5 {
+            font: normal normal bold 1rem/18px TimesBold;
+
+            @include mobile {
+                font: normal normal bold 0.875rem/18px TimesBold;
+
+                &.txtBt {
+                    margin-bottom: 1.59rem;
+                }
+            }
+        }
+
+        h6 {
+            font: normal normal bold 1rem/19px InterstateBold;
+        }
+
+        p {
+            font: normal normal bold 0.75rem/18px InterstateLight;
+
+            @include mobile {
+                font: normal normal bold 0.625rem/18px InterstateLight;
+            }
+        }
+
+        a {
+            @include btnBuy(auto, auto, $primary, $secondary);
+            padding: .4rem 7rem;
+
+            @include mobile {
+                padding: .4rem 1rem;
+            }
+        }
+
+        &:hover {
+            background: $tertiary_hover;
+
+            img {
+                transform: translateY(-55px);
+
+                @include mobile {
+                    transform: translateY(-35px);
+                }
+                
+            }
+
+            a {
+                background: $tertiary;
+            }
+        }
+    }
+}

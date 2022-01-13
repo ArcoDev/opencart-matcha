@@ -1,0 +1,14 @@
+.ad {
+    width: 100%;
+    height: 32px;
+    background: $tertiary_hover;
+    @include grid(1);
+    place-items: center;
+    position: fixed;
+    z-index: 6;
+    p {
+        font: normal normal 700 0.625rem/12px $firaSans;
+        color: $gray;
+        margin-bottom: 0;
+    }
+}

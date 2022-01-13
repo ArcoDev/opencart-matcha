@@ -1,0 +1,7 @@
+.recommended {
+    @include grid(1);
+    place-items: center;
+    h2 {
+        @include titleH2;
+    }
+}
