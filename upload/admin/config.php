@@ -1,18 +1,18 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/Proyectos/Bombilla/matcha/upload/admin/');
-define('HTTP_CATALOG', 'http://localhost/Proyectos/Bombilla/matcha/upload/');
+define('HTTP_SERVER', 'http://localhost/proyectos/Bombilla/matcha/upload/admin/');
+define('HTTP_CATALOG', 'http://localhost/proyectos/Bombilla/matcha/upload/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/Proyectos/Bombilla/matcha/upload/admin/');
-define('HTTPS_CATALOG', 'http://localhost/Proyectos/Bombilla/matcha/upload/');
+define('HTTPS_SERVER', 'http://localhost/proyectos/Bombilla/matcha/upload/admin/');
+define('HTTPS_CATALOG', 'http://localhost/proyectos/Bombilla/matcha/upload/');
 
 // DIR
-define('DIR_APPLICATION', 'D:/Programas/xampp/htdocs/Proyectos/Bombilla/matcha/upload/admin/');
-define('DIR_SYSTEM', 'D:/Programas/xampp/htdocs/Proyectos/Bombilla/matcha/upload/system/');
-define('DIR_IMAGE', 'D:/Programas/xampp/htdocs/Proyectos/Bombilla/matcha/upload/image/');
-define('DIR_STORAGE', 'D:/Programas/xampp/storage/');
-define('DIR_CATALOG', 'D:/Programas/xampp/htdocs/Proyectos/Bombilla/matcha/upload/catalog/');
+define('DIR_APPLICATION', 'D:/Programas/wamp64/www/Proyectos/Bombilla/matcha/upload/admin/');
+define('DIR_SYSTEM', 'D:/Programas/wamp64/www/Proyectos/Bombilla/matcha/upload/system/');
+define('DIR_IMAGE', 'D:/Programas/wamp64/www/Proyectos/Bombilla/matcha/upload/image/');
+define('DIR_STORAGE', 'D:/Programas/wamp64/storage/');
+define('DIR_CATALOG', 'D:/Programas/wamp64/www/Proyectos/Bombilla/matcha/upload/catalog/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/template/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');
