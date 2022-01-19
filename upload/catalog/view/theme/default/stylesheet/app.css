@@ -841,6 +841,7 @@ button:not(:disabled),
   color: #2E4121;
   text-align: center;
   font: normal normal 500 0.875rem/17px "Fira Sans", sans-serif;
+  cursor: pointer;
 }
 .box-gradient .info-te .img-hoja {
   position: relative;
