@@ -70,11 +70,16 @@
         background-image: url('../img/fondo-btn.svg');
         display: grid;
         place-items: center;
-        color: $tertiary_hover;
+        color: $tertiary_hover!important;
         font: normal italic 500 .875rem/17px $firaSans;
         position: relative;
         top: -200px;
         left: -230px;
+        cursor: pointer;
+
+        &:hover {
+            font-weight: bold;
+        }
 
         @include mobile {
             top: -115px;

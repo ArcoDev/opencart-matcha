@@ -3,12 +3,12 @@
   <legend>{{ heading_title }}</legend>
   {% if error_warning %}
   <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <button type="button" class="close btn-danger" data-dismiss="alert">&times;</button>
   </div>
   {% endif %}
   {% if success %}
-  <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }}
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }} test
+    <button type="button" class="close btn-danger" data-dismiss="alert">&times;</button>
   </div>
   {% endif %}
   <div class="alert alert-info"><i class="fa fa-info-circle"></i> {{ text_layout }}</div>

@@ -229,7 +229,7 @@
     position: absolute;
     background-color: transparent;
     border: none;
-    margin-top: 8px;
+    margin-top: 6px;
     margin-left: -250px;
 
     @include mobile {
@@ -300,6 +300,9 @@
     .cart {
         @include sizeIcons;
         background-image: url('../img/cart.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 

@@ -72,11 +72,11 @@
             transition: .3s ease-out;
 
             a {
-                color: $secondary;
+                color: $secondary!important;
                 transition: .3s ease-out;
 
                 &:hover {
-                    color: $tertiary_hover;
+                    color: $tertiary_hover!important;
                 }
             }
             &.text-privacy {

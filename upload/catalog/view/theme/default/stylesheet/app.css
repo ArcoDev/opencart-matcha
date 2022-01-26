@@ -218,12 +218,11 @@ button:not(:disabled),
 }
 
 .btn-primary {
-  padding: 0.6rem 3rem !important;
   border: 1px solid transparent !important;
   border-radius: 20px !important;
   background-color: #C7E0BB !important;
   color: #2E4121 !important;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5), 0 2px 2px 0 rgba(0, 0, 0, 0.19) !important;
+  box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5) !important;
 }
 .btn-primary:hover {
   background-color: #2E4121 !important;
@@ -506,7 +505,7 @@ button:not(:disabled),
   position: absolute;
   background-color: transparent;
   border: none;
-  margin-top: 8px;
+  margin-top: 6px;
   margin-left: -250px;
 }
 @media screen and (max-width: 767px) {
@@ -580,6 +579,9 @@ button:not(:disabled),
   height: 24px;
   cursor: pointer;
   background-image: url("../img/cart.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .dropdown-menu {
@@ -691,11 +693,15 @@ button:not(:disabled),
   background-image: url("../img/fondo-btn.svg");
   display: grid;
   place-items: center;
-  color: #C7E0BB;
+  color: #C7E0BB !important;
   font: normal italic 500 0.875rem/17px "Fira Sans", sans-serif;
   position: relative;
   top: -200px;
   left: -230px;
+  cursor: pointer;
+}
+.whats-matcha .btn-matcha:hover {
+  font-weight: bold;
 }
 @media screen and (max-width: 767px) {
   .whats-matcha .btn-matcha {
@@ -1564,11 +1570,11 @@ button:not(:disabled),
   transition: 0.3s ease-out;
 }
 .footer .row p a {
-  color: #ffffff;
+  color: #ffffff !important;
   transition: 0.3s ease-out;
 }
 .footer .row p a:hover {
-  color: #C7E0BB;
+  color: #C7E0BB !important;
 }
 .footer .row p.text-privacy {
   margin: 0;

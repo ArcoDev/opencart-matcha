@@ -17,7 +17,7 @@ body {
     &::-webkit-scrollbar {
         background: $gradient;
     }
-    
+
     &::-webkit-scrollbar-thumb {
         background-color: $tertiary_hover;
         border: 1px solid $tertiary_hover;
@@ -232,12 +232,12 @@ button:not(:disabled),
 
 // Estilos Button global
 .btn-primary {
-    padding: 0.6rem 3rem !important;
+    // padding: 0.6rem 3rem !important;
     border: 1px solid transparent !important;
     border-radius: 20px !important;
     background-color: $tertiary_hover !important;
     color: $tertiary !important;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5), 0 2px 2px 0 rgba(0, 0, 0, 0.19) !important;
+    box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5) !important;
 
     &:hover {
         background-color: $tertiary !important;
@@ -277,6 +277,7 @@ button:not(:disabled),
 .list-unstyled {
     li a {
         color: lighten($tertiary, 10);
+
         &:hover {
             color: $tertiary;
         }

@@ -32,5 +32,45 @@ define('DB_DATABASE', 'matcha');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
 
-// OpenCart API
-define('OPENCART_SERVER', 'https://www.opencart.com/');
+
+
+// CPANEL
+// // OpenCart API
+// define('OPENCART_SERVER', 'https://www.opencart.com/');
+
+
+// // HTTP
+// define('HTTP_SERVER', 'http:///home/uguy22p3jjqi/moraymatcha.com/www/admin/');
+// define('HTTP_CATALOG', 'http:///home/uguy22p3jjqi/moraymatcha.com/www/');
+
+// // HTTPS
+// define('HTTPS_SERVER', 'http:///home/uguy22p3jjqi/moraymatcha.com/www/admin/');
+// define('HTTPS_CATALOG', 'http:///home/uguy22p3jjqi/moraymatcha.com/www/');
+
+// // DIR
+// define('DIR_APPLICATION', '/home/uguy22p3jjqi/moraymatcha.com/www/admin/');
+// define('DIR_SYSTEM', '/home/uguy22p3jjqi/moraymatcha.com/www/system/');
+// define('DIR_IMAGE', '/home/uguy22p3jjqi/moraymatcha.com/www/image/');
+// define('DIR_STORAGE', '/home/uguy22p3jjqi/moraymatcha.com/www/storage/');
+// define('DIR_CATALOG', '/home/uguy22p3jjqi/moraymatcha.com/www/catalog/');
+// define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
+// define('DIR_TEMPLATE', DIR_APPLICATION . 'view/template/');
+// define('DIR_CONFIG', DIR_SYSTEM . 'config/');
+// define('DIR_CACHE', DIR_STORAGE . 'cache/');
+// define('DIR_DOWNLOAD', DIR_STORAGE . 'download/');
+// define('DIR_LOGS', DIR_STORAGE . 'logs/');
+// define('DIR_MODIFICATION', DIR_STORAGE . 'modification/');
+// define('DIR_SESSION', DIR_STORAGE . 'session/');
+// define('DIR_UPLOAD', DIR_STORAGE . 'upload/');
+
+// // DB
+// define('DB_DRIVER', 'mysqli');
+// define('DB_HOSTNAME', '/home/uguy22p3jjqi');
+// define('DB_USERNAME', 'bombilla');
+// define('DB_PASSWORD', 'hotIkTUhtAA2');
+// define('DB_DATABASE', 'moraymatcha');
+// define('DB_PORT', '3306');
+// define('DB_PREFIX', 'oc_');
+
+// // OpenCart API
+// define('OPENCART_SERVER', 'https://www.opencart.com/');
