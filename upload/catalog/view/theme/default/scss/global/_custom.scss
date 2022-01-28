@@ -202,15 +202,6 @@ button:not(:disabled),
 //End Custom Footer
 
 
-
-// Custom pages height
-// .height-full {
-//     height: auto !important;
-// }
-
-// End Custom pages height
-
-
 // breadcrumb global
 .breadcrumb {
     border: 1px solid $tertiary_hover;
@@ -232,17 +223,17 @@ button:not(:disabled),
 
 // Estilos Button global
 .btn-primary {
-    // padding: 0.6rem 3rem !important;
     border: 1px solid transparent !important;
-    border-radius: 20px !important;
     background-color: $tertiary_hover !important;
     color: $tertiary !important;
-    box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5) !important;
-
     &:hover {
         background-color: $tertiary !important;
         color: $tertiary_hover !important;
     }
+}
+
+#button-quote {
+    margin-top: 1rem !important;
 }
 
 // End button global

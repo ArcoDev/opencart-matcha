@@ -219,14 +219,16 @@ button:not(:disabled),
 
 .btn-primary {
   border: 1px solid transparent !important;
-  border-radius: 20px !important;
   background-color: #C7E0BB !important;
   color: #2E4121 !important;
-  box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5) !important;
 }
 .btn-primary:hover {
   background-color: #2E4121 !important;
   color: #C7E0BB !important;
+}
+
+#button-quote {
+  margin-top: 1rem !important;
 }
 
 .style-search {
@@ -507,6 +509,7 @@ button:not(:disabled),
   border: none;
   margin-top: 6px;
   margin-left: -250px;
+  cursor: pointer !important;
 }
 @media screen and (max-width: 767px) {
   .button-search {

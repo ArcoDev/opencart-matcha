@@ -231,6 +231,7 @@
     border: none;
     margin-top: 6px;
     margin-left: -250px;
+    cursor: pointer!important;
 
     @include mobile {
         margin-top: 40px;
