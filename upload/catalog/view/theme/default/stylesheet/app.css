@@ -7,6 +7,10 @@ html {
   scroll-behavior: smooth;
 }
 
+*:focus {
+  outline: none !important;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -231,6 +235,15 @@ button:not(:disabled),
   margin-top: 1rem !important;
 }
 
+.close {
+  background-color: #C7E0BB;
+  color: #2E4121;
+  padding: 0 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer !important;
+}
+
 .style-search {
   color: #2E4121 !important;
 }
@@ -258,6 +271,11 @@ button:not(:disabled),
 }
 .list-unstyled li a:hover {
   color: #2E4121;
+}
+
+.table-cart.show {
+  position: absolute !important;
+  left: -45px;
 }
 
 .ad {
@@ -499,7 +517,7 @@ button:not(:disabled),
     font-size: 1rem;
     top: 40px;
     left: -133px;
-    padding: 0 7.3rem 0 1.5rem;
+    padding: 0.2rem 10rem 0.2rem 1.5rem;
   }
 }
 
@@ -587,13 +605,13 @@ button:not(:disabled),
   background-repeat: no-repeat;
 }
 
-.dropdown-menu {
+.dropdown-session {
   border: 1px solid #C7E0BB !important;
   margin-top: 0.5rem !important;
   background-color: #C7E0BB !important;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
 }
-.dropdown-menu::before {
+.dropdown-session::before {
   content: "";
   position: absolute;
   top: -20px;
@@ -603,16 +621,27 @@ button:not(:disabled),
   border-left: 10px solid transparent;
   border-bottom: 10px solid #C7E0BB;
 }
-.dropdown-menu.show {
+.dropdown-session.show {
   background-color: #C7E0BB;
   transform: translate(-95px, 57px) !important;
 }
-.dropdown-menu li a {
+@media screen and (max-width: 767px) {
+  .dropdown-session.show {
+    transform: translate(-45px, 57px) !important;
+  }
+}
+.dropdown-session li a {
   color: #2E4121;
   margin: 1rem;
 }
-.dropdown-menu li a:hover {
+.dropdown-session li a:hover {
   color: #000000;
+}
+
+.dropdown-footer {
+  background-color: #C7E0BB;
+  color: #2E4121;
+  width: 100%;
 }
 
 .whats-matcha {
@@ -1512,6 +1541,11 @@ button:not(:disabled),
   background-color: #2E4121;
   padding: 59px 59px 15px 57px;
   margin-top: 0;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 2rem 0.5rem;
+  }
 }
 .footer .row {
   color: #ffffff;

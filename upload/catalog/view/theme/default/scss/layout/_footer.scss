@@ -1,11 +1,10 @@
 .footer {
     background-color: $tertiary;
-    // @include backBanner;
-    // background-image: url('../img/fondo-footer.svg');
     padding: 59px 59px 15px 57px;
     margin-top: 0;
-    // position: absolute;
-    // bottom: 0;
+    @include mobile {
+        padding: 2rem 0.5rem;
+    }
     .row {
         color: $secondary;
 

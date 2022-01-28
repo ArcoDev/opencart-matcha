@@ -7,6 +7,10 @@ html {
     scroll-behavior: smooth;
 }
 
+*:focus {
+    outline: none!important;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -226,6 +230,7 @@ button:not(:disabled),
     border: 1px solid transparent !important;
     background-color: $tertiary_hover !important;
     color: $tertiary !important;
+
     &:hover {
         background-color: $tertiary !important;
         color: $tertiary_hover !important;
@@ -234,6 +239,15 @@ button:not(:disabled),
 
 #button-quote {
     margin-top: 1rem !important;
+}
+
+.close {
+    background-color: $tertiary_hover;
+    color: $tertiary;
+    padding: 0 .7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer !important;
 }
 
 // End button global
@@ -273,4 +287,9 @@ button:not(:disabled),
             color: $tertiary;
         }
     }
+}
+
+.table-cart.show {
+    position: absolute!important;
+
 }

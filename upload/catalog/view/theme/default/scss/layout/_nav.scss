@@ -220,7 +220,7 @@
         font-size: 1rem;
         top: 40px;
         left: -133px;
-        padding: 0 7.3rem 0 1.5rem;
+        padding: 0.2rem 10rem 0.2rem 1.5rem;
     }
 }
 
@@ -307,7 +307,7 @@
     }
 }
 
-.dropdown-menu {
+.dropdown-session {
     border: 1px solid $tertiary_hover !important;
     margin-top: .5rem!important;
     background-color: $tertiary_hover !important;
@@ -326,6 +326,9 @@
     &.show {
         background-color: $tertiary_hover;
         transform: translate(-95px, 57px)!important;
+        @include mobile {
+            transform: translate(-45px, 57px)!important;
+        }
     }
 
     li a {
@@ -336,4 +339,10 @@
             color: $primary;
         }
     }
+}
+
+.dropdown-footer {
+    background-color: $tertiary_hover;
+    color: $tertiary;
+    width: 100%
 }
