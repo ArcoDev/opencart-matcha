@@ -307,6 +307,10 @@
     }
 }
 
+.dropdown-menu {
+    background-color: $tertiary_hover!important;
+}
+
 .dropdown-session {
     border: 1px solid $tertiary_hover !important;
     margin-top: .5rem!important;

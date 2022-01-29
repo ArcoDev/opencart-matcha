@@ -22,7 +22,7 @@ $_['text_your_address'] 	=  'Dirección';
 $_['text_your_password'] 	=  'Contraseña';
 $_['text_agree'] 	=  'He leído y acepto los <a href="%s" class="agree"><b>%s</b></a>';
 $_['text_address_new'] 	=  'Quiero usar una nueva dirección';
-$_['text_address_existing'] 	=  'quiero usar una dirección existente';
+$_['text_address_existing'] 	=  'Quiero usar una dirección existente';
 $_['text_shipping_method'] 	=  'Seleccione el método de envío preferido para utilizar en este pedido.';
 $_['text_payment_method'] 	=  'Seleccione el método de pago preferido para utilizar en este pedido.';
 $_['text_comments'] 	=  'Añadir Comentarios Sobre Su Pedido';

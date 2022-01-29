@@ -178,6 +178,11 @@ button:not(:disabled),
   }
 }
 
+.anchor {
+  position: absolute;
+  margin-top: -50px;
+}
+
 .info-mov {
   display: none;
 }
@@ -275,7 +280,6 @@ button:not(:disabled),
 
 .table-cart.show {
   position: absolute !important;
-  left: -45px;
 }
 
 .ad {
@@ -603,6 +607,10 @@ button:not(:disabled),
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.dropdown-menu {
+  background-color: #C7E0BB !important;
 }
 
 .dropdown-session {
