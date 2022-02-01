@@ -397,7 +397,8 @@ button:not(:disabled),
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .nav-mora .hamburguer {
     display: block;
-    margin-top: 1.3rem;
+    margin-top: 1rem;
+    margin-left: -15rem;
   }
 }
 .nav-mora .links {
@@ -405,9 +406,19 @@ button:not(:disabled),
   gap: 1.3rem;
   margin: 1rem 0 0 0;
 }
+@media screen and (max-width: 767px) {
+  .nav-mora .links {
+    gap: 2rem;
+  }
+}
 @media screen and (min-width: 1919px) {
   .nav-mora .links {
     margin: 0.5rem 0 0 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .nav-mora .links {
+    gap: 3rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -417,7 +428,7 @@ button:not(:disabled),
     height: 100vh;
     background: #ffffff;
     position: absolute;
-    top: 80px;
+    top: 63px;
     left: -100%;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
     padding: 1rem;
@@ -429,16 +440,19 @@ button:not(:disabled),
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .nav-mora .links {
-    display: none;
     flex-direction: column;
     width: 45vh;
     height: 100vh;
     background: #ffffff;
     position: absolute;
-    top: 80px;
+    top: 63px;
     left: -100%;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-    padding: 1rem;
+    padding: 2rem 1.5rem;
+    transition: 0.5s ease-out;
+  }
+  .nav-mora .links.activo {
+    left: 0;
   }
 }
 .nav-mora .links li a {
@@ -486,7 +500,6 @@ button:not(:disabled),
     height: 20px;
     left: 15%;
     bottom: 5%;
-    display: none;
   }
 }
 
@@ -505,7 +518,9 @@ button:not(:disabled),
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .input-desc {
-    display: none;
+    position: absolute;
+    left: 45px;
+    margin-top: -0.5rem;
   }
 }
 
@@ -540,6 +555,13 @@ button:not(:disabled),
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .button-search {
+    position: absolute;
+    left: 18rem;
+    margin-top: -0.4rem;
+  }
+}
 .button-search:focus {
   color: #828282;
 }
@@ -570,6 +592,7 @@ button:not(:disabled),
 
 .icons {
   display: flex;
+  align-items: center;
   gap: 1rem;
   margin: 1rem 0 0 2rem;
 }
@@ -587,7 +610,7 @@ button:not(:disabled),
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .icons .search {
-    display: block;
+    display: none;
   }
 }
 .icons .user {
@@ -607,6 +630,7 @@ button:not(:disabled),
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 0.9rem;
 }
 
 .dropdown-menu {
@@ -1553,6 +1577,11 @@ button:not(:disabled),
 @media screen and (max-width: 767px) {
   .footer {
     padding: 2rem 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer {
+    padding: 2rem 0;
   }
 }
 .footer .row {
